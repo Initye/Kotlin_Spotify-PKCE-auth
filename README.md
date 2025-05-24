@@ -26,7 +26,7 @@ Add the module to your project manually.
 
 ---
 
-## :tools: Setup
+## 🛠️ Setup
 
 ### 1. Register an App on Spotify
 Go to the [Spotify Developer Dashboard](https://developer.spotify.com/dashboard) and register your app.  
