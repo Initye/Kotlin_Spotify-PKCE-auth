@@ -1,0 +1,7 @@
+<!-- REMEMBER TO ADD THIS TO YOUR <activity> in AndroidManifest.xml (if working on AndroidStudio) -->
+<intent-filter>
+    <action android:name="android.intent.action.VIEW" />
+    <category android:name="android.intent.category.DEFAULT" />
+    <category android:name="android.intent.category.BROWSABLE" />
+    <data android:scheme="[]" android:host="[]" />
+</intent-filter>
