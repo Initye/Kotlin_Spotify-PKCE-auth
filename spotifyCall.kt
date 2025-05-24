@@ -20,12 +20,6 @@ import androidx.compose.runtime.setValue
 //Then it sends call to api
 //hack code ngl 
 
-@Composable
-fun linkPlaylist() {
-    var playlistLink by remember { mutableStateOf("") }
-    Column{ Input(linkPlaylist = playlistLink, onLinkChange = { playlistLink = it }) }
-}
-
 suspend fun getPlaylist(context: Context, playlistLink: String): JSONObject? = withContext(Dispatchers.IO) {
     val sharedPrefs  = context.getSharedPreferences("spotify_prefs", Context.MODE_PRIVATE)
     val accessToken =  sharedPrefs.getString("access_token", null)
