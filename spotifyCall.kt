@@ -16,11 +16,11 @@ import java.io.IOException
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.setValue
 
-//What it does is that its getting your sharedprefs "spotify_prefs" and gets access token from it
-//Then it sends call to api
-//hack code ngl 
 
 suspend fun getPlaylist(context: Context, playlistLink: String): JSONObject? = withContext(Dispatchers.IO) {
+    //What it does is that its getting your sharedprefs "spotify_prefs" and gets access token from it
+    //Then it sends call to api
+    //hack code ngl 
     val sharedPrefs  = context.getSharedPreferences("spotify_prefs", Context.MODE_PRIVATE)
     val accessToken =  sharedPrefs.getString("access_token", null)
 
