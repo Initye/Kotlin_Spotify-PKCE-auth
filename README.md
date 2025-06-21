@@ -31,4 +31,3 @@ Add the module to your project manually.
 ### 1. Register an App on Spotify
 Go to the [Spotify Developer Dashboard](https://developer.spotify.com/dashboard) and register your app.  
 Set a **Redirect URI**
-
